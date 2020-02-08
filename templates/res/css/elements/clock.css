@@ -1,6 +1,6 @@
 .clock {
   position: relative;
-  background-color: var(--color-darkgrey);
+  background-color: var(--color-white);
 }
 
 .clock-face {
@@ -9,7 +9,7 @@
   left: 50%;
   width: 48vh;
   height: 48vh;
-  background-color: var(--color-lightgrey);
+  border: 3px solid var(--color-darkgrey);
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
@@ -26,13 +26,13 @@
 .clock-face .hour-hand {
   width: 10px;
   height: 28vh;
-  background-image: linear-gradient(to top, transparent 0%, transparent 45%, var(--color-black) 45%, var(--color-black) 100%);
+  background-image: linear-gradient(to top, transparent 0%, transparent 45%, var(--color-darkgrey) 45%, var(--color-darkgrey) 100%);
 }
 
 .clock-face .minute-hand {
   width: 8px;
   height: 45vh;
-  background-image: linear-gradient(to top, transparent 0%, transparent 45%, var(--color-black) 45%, var(--color-black) 100%);
+  background-image: linear-gradient(to top, transparent 0%, transparent 45%, var(--color-darkgrey) 45%, var(--color-darkgrey) 100%);
 }
 
 .clock-face .second-hand {
