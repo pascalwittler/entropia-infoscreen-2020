@@ -3,8 +3,9 @@ from flask import Flask, redirect, request, render_template
 app = Flask(__name__)
 
 @app.route('/')
+
 def index():
-    return 'Hello World!'
+    return render_template('index.html')
 
 if __name__ == '__main__':
-    app.run(port = 1337, debug = True)
+    app.run(None, 1337, True)

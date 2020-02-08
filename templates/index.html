@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entropia Infoscreen</title>
-    <link rel="stylesheet" href="res/css/main.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
   </head>
   <body>
     <main>
@@ -16,7 +16,7 @@
         </div>
       </section>
       <section class="departure">
-        
+
       </section>
       <section class="calendar">
 
@@ -25,6 +25,6 @@
 
       </section>
     </main>
-    <script src="res/js/main.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
   </body>
 </html>
