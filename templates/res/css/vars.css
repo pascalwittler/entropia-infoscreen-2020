@@ -1,0 +1,9 @@
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-primary: #eb5b04;
+  --color-lightgrey: #bbbbbb;
+  --color-darkgrey: #222222;
+
+  --font-family: 'Fira Sans', sans-serif;
+}

@@ -1,0 +1,42 @@
+.clock {
+  position: relative;
+  background-color: var(--color-darkgrey);
+}
+
+.clock-face {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25vw;
+  height: 25vw;
+  background-color: var(--color-lightgrey);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock-face .hour-hand,
+.clock-face .minute-hand,
+.clock-face .second-hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.clock-face .hour-hand {
+  width: 10px;
+  height: 14vw;
+  background-image: linear-gradient(to top, transparent 0%, transparent 45%, var(--color-black) 45%, var(--color-black) 100%);
+}
+
+.clock-face .minute-hand {
+  width: 8px;
+  height: 20vw;
+  background-image: linear-gradient(to top, transparent 0%, transparent 45%, var(--color-black) 45%, var(--color-black) 100%);
+}
+
+.clock-face .second-hand {
+  width: 3px;
+  height: 22vw;
+  background-image: linear-gradient(to top, transparent 0%, transparent 45%, var(--color-primary) 45%, var(--color-primary) 100%);
+}
