@@ -15,14 +15,33 @@
           <div class="second-hand"></div>
         </div>
       </section>
-      <section class="departure">
-
-      </section>
       <section class="calendar">
 
       </section>
       <section class="weather">
 
+      </section>
+      <section class="departure">
+        {% if departures %}
+          <div class="timetable">
+            {% for departure in departures["departures"] %}
+              <div class="row">
+                <span class="route" data-route="{{ departure['route'] }}">{{ departure["route"] }}</span>
+                <span class="destination">{{ departure["destination"] }}</span>
+                <span class="time">
+                  {% if departure["time"] == "0" %}
+                    sofort
+                  {% else %}
+                    {{ departure["time"] }}
+                  {% endif %}
+                </span>
+                <span>
+
+                </span>
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
       </section>
     </main>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
