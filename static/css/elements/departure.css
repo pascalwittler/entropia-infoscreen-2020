@@ -99,3 +99,9 @@
 .departure .timetable .row .route[data-route="S81"] {
   background-color: #6e692a;
 }
+
+.departure .timetable .row .route[data-route="S"],
+.departure .timetable .row .route[data-route="E"] {
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
